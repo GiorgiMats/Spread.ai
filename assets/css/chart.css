@@ -1,0 +1,45 @@
+.section-chart {
+    height: 100vh;
+    max-height: 900px;
+    display: grid;
+    align-content: center;
+}
+
+.section-chart-inside {
+    width: 100%;
+}
+
+.chart-box {
+    display: grid;
+    background-color: var(--primary-700);
+    border-radius: 16px;
+    padding: 52px 24px;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 24px;
+    width: 100%;
+}
+
+.section-chart .heading {
+    display: grid;
+    justify-content: center;
+    grid-gap: 24px;
+}
+
+.section-chart .heading h2,
+.section-chart .heading p {
+    text-align: center;
+}
+
+.section-chart .buttons-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 12px;
+    margin-top: 8px;
+}
+
+.section-chart .image-container img {
+    max-width: 1246px;
+    width: 100%;
+    height: auto;
+}

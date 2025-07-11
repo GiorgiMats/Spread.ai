@@ -1,0 +1,41 @@
+.hwi-h1 {
+    text-align: center;
+    /* margin-top: 52px; */
+    /* margin-bottom: 52px; */
+}
+
+.section-chess {
+    margin-bottom: 128px;
+}
+
+.section-chess-inside {
+    display: grid;
+    grid-gap: 52px;
+    justify-content: center;
+}
+
+.chess-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 52px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.chess-item .chess-text-container {
+    display: grid;
+    grid-gap: 24px;
+}
+
+.chess-item .chess-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .chess-item {
+        grid-auto-flow: row;
+        grid-template-columns: unset;
+        grid-gap: 24px;
+    }
+}

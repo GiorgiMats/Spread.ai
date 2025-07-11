@@ -1,0 +1,114 @@
+/* ----------  Layout & look  ---------- */
+.section-team {
+    /* background: #11150f; */
+    color: #f8f8f5;
+    padding: 80px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title-team {
+    /* font: 600 40px/1 "Inter", sans-serif; */
+    margin-bottom: 60px;
+}
+
+/* ----------  Cards  ---------- */
+.cards-team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.card-team {
+    position: relative;
+    width: 200px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    transition: transform 0.45s ease, opacity 0.45s ease;
+    transform: scale(0.82);
+    opacity: 0.4;
+    border: 1px solid var(--neutral-700);
+}
+
+.card-team img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-team {
+    background: var(--neutral-900);
+    padding: 12px;
+    text-align: left;
+    display: grid;
+    grid-gap: 12px;
+}
+
+.links-team {
+    display: flex;
+    gap: 8px;
+}
+
+.links-team svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ----------  Active / hover state  ---------- */
+.card-team.active-team,
+.card-team:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.card-team:not(:hover).active-team {
+    /* keep active when mouse leaves row */
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* Smoothness for shrinking neighbours */
+.cards-team:hover .card-team:not(:hover) {
+    opacity: 0.28;
+    transform: scale(0.82);
+}
+
+@media (max-width: 700px) {
+    .cards-team {
+        gap: 12px;
+    }
+
+    .card-team {
+        width: 160px;
+    }
+}
+
+.info-team-main {
+    display: grid;
+    grid-gap: 6px;
+}
+
+.section-team-inside {
+    display: grid;
+    grid-gap: 80px;
+}
+
+.section-team {
+    height: calc(100vh - 180px);
+    max-height: 900px;
+    display: grid;
+    align-content: center;
+}
+
+@media only screen and (max-width: 1500px) {
+    .section-team {
+        height: unset;
+        max-height: unset;
+    }
+
+    .cards-team {
+        flex-wrap: wrap;
+    }
+}

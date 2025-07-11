@@ -1,0 +1,82 @@
+.section-phone {
+    display: grid;
+    height: calc(100vh - 180px);
+    max-height: 900px;
+    align-content: center;
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
+.section-phone-inside {
+    border-radius: 16px;
+    background: linear-gradient(113deg, #D8FE53 0.62%, #80B000 99.19%);
+    padding: 80px 24px 0 24px;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-gap: 24px;
+    justify-content: center;
+}
+
+.section-phone-inside h2,
+.section-phone-inside p {
+    text-align: center;
+}
+
+.section-phone .--steps-text {
+    color: var(--primary-800);
+}
+
+.section-phone .buttons-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-phone .image-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: end;
+}
+
+.section-phone .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#logo-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 1; */
+}
+
+.section-phone p,
+.section-phone div,
+.section-phone h2 {
+    z-index: 2;
+}
+
+@media only screen and (max-width: 670px) {
+    .section-phone {
+        margin-top: 52px;
+        margin-bottom: 52px;
+        height: unset;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .section-phone .buttons-container {
+        grid-gap: 12px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .section-phone .buttons-container {
+        grid-gap: 12px;
+        grid-auto-flow: row;
+    }
+}

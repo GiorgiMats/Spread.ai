@@ -1,0 +1,71 @@
+.section-how-to-access {
+    height: calc(100vh - 180px);
+    max-height: 900px;
+    display: grid;
+    align-content: center;
+    background-image: url('../img/how-to-access-bg.png');
+    background-position: center;
+    background-size: initial;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.section-how-to-access-inside {
+    display: grid;
+    grid-gap: 52px;
+    justify-content: center;
+}
+
+.section-how-to-access-inside h2 {
+    text-align: center;
+}
+
+.hta-content-container {
+    display: grid;
+    grid-auto-flow: column;
+    background-color: var(--black);
+    border-radius: 24px;
+    border: 10px solid rgba(252, 255, 229, 0.10);
+    box-sizing: content-box;
+}
+
+.hta-step {
+    display: grid;
+    padding: 90px 52px;
+    grid-gap: 12px;
+    align-content: start;
+    justify-content: start;
+}
+
+.hta-items-divider {
+    height: 100%;
+    width: 1px;
+    background-color: rgba(252, 255, 229, 0.10);
+}
+
+@media only screen and (max-width: 1470px) {
+    .hta-content-container {
+        width: 100%;
+        overflow: hidden;
+        grid-auto-flow: row;
+    }
+
+    .hta-step {
+        padding: 24px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .hta-step img {
+        max-width: 360px;
+        width: 100%;
+        height: auto;
+    }
+
+    .section-how-to-access {
+        height: unset;
+        max-height: unset;
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+}

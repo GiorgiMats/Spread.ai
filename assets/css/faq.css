@@ -1,0 +1,120 @@
+.section-faq {
+    margin-bottom: 128px;
+}
+
+.section-faq-inside {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    justify-content: space-between;
+    grid-template-columns: auto 1fr;
+}
+
+.faq-leftside-menu {
+    display: grid;
+    max-width: 336px;
+    grid-gap: 52px;
+}
+
+.faq-main-content {
+    display: grid;
+    justify-content: center;
+    /* max-width: 804px; */
+    width: 100%;
+    /* justify-self: end; */
+}
+
+.faq-main-inside {
+    max-width: 804px;
+    display: grid;
+    grid-gap: 52px;
+    align-content: start;
+}
+
+.accordion {
+    background-color: var(--black);
+    border-radius: 12px;
+    cursor: pointer;
+    /* padding: 24px 40px; */
+    padding-bottom: 16px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.faq-accordion {
+    border-bottom: 1px solid var(--white-10);
+}
+
+.active,
+.accordion:hover {
+    /* background-color: #0E0D0F; */
+}
+
+.accordion:after {
+    content: '\002B';
+    color: var(--white);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    /* padding: 0 40px; */
+    /* background-color: #0E0D0F; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+    padding-bottom: 24px;
+}
+
+.faqs-container {
+    display: grid;
+    align-content: start;
+    grid-gap: 24px;
+}
+
+.faq-nav {
+    display: grid;
+    grid-gap: 24px;
+    justify-content: start;
+}
+
+.faq-nav .fn-li {
+    color: var(--neutral-600);
+}
+
+.faq-nav .fn-li-active {
+    color: var(--white);
+}
+
+@media only screen and (max-width: 800px) {
+    .section-faq-inside {
+        grid-auto-flow: row;
+        grid-template-columns: unset;
+    }
+
+    .faq-leftside-menu {
+        grid-gap: 24px;
+    }
+}
+
+@media only screen and (max-width: 548px) {
+    .section-faq {
+        padding-top: 52px;
+        grid-gap: 24px;
+    }
+
+    .faqs-container {
+        grid-gap: 8px;
+    }
+}

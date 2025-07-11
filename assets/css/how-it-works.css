@@ -1,0 +1,165 @@
+.section-how-it-works {
+    height: calc(100vh - 180px);
+    max-height: 900px;
+    display: grid;
+    align-content: center;
+}
+
+.section-how-it-works-inside {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 52px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section-how-it-works-inside .content-container {
+    display: grid;
+    grid-gap: 24px;
+}
+
+.section-how-it-works-inside .content-container .texts-container {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.section-how-it-works .--text {
+    color: var(--text-color);
+}
+
+.section-how-it-works .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 950px) {
+    .section-how-it-works {
+        height: unset;
+        max-height: unset;
+        margin-top: 52px;
+        margin-bottom: 52px;
+    }
+
+    .section-how-it-works-inside {
+        grid-template-columns: unset;
+        grid-auto-flow: row;
+    }
+
+    .section-how-it-works .image-container img {
+        max-width: 512px;
+    }
+
+    .section-how-it-works .image-container {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+
+/* Token Page Perkz */
+
+.section-token-hdiw {
+    margin: 80px 0;
+}
+
+.section-token-hdiw-inside {
+    display: grid;
+    grid-gap: 52px;
+}
+
+.section-token-hdiw-inside .--h2-2 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.section-token-hdiw-inside .boxes-container {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.section-token-hdiw-inside .boxes-container .--h3 {
+    text-align: center;
+}
+
+.section-token-hdiw-inside .boxes-container .--h3 span {
+    display: block;
+    text-align: center;
+}
+
+.hdiw-item-big {
+    background: url('../img/token-hdiw-bg-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 24px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-800);
+    cursor: pointer;
+}
+
+.hdiw-item {
+    background: url('../img/token-hdiw-bg-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 24px;
+    display: grid;
+    justify-content: center;
+    grid-gap: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--neutral-800);
+    cursor: pointer;
+}
+
+.hdiw-item:hover,
+.hdiw-item-big:hover {
+    background-color: var(--green);
+}
+
+.hdiw-item:hover .--h3,
+.hdiw-item-big:hover .--h3 {
+    color: var(--black);
+}
+
+.hdiw-item:hover svg rect,
+.hdiw-item-big:hover svg rect {
+    fill: var(--black);
+}
+
+.hdiw-item:hover svg path,
+.hdiw-item-big:hover svg path {
+    fill: var(--green);
+}
+
+.sthdiw-big-boxes {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sthdiw-boxes {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Token Page How it works */
+
+.buy-on-dex-container {
+    display: grid;
+    grid-gap: 16px;
+}
+
+.buy-dex-links-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 12px;
+    justify-content: start;
+}
