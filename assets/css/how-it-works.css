@@ -114,6 +114,7 @@
     border-radius: 8px;
     border: 1px solid var(--neutral-800);
     cursor: pointer;
+    justify-items: center;
 }
 
 .hdiw-item:hover,

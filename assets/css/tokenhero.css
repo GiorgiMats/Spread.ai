@@ -3,11 +3,11 @@
     max-height: 900px;
     display: grid;
     align-content: center;
-    background-image: url('../img/how-to-access-bg.png');
+    /* background-image: url('../img/how-to-access-bg.png');
     background-position: center;
     background-size: initial;
     overflow: hidden;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .section-tokenhero-inside {
@@ -56,4 +56,26 @@
 
 .stil-item .--big-text {
     color: var(--neutral-300);
+}
+
+@media only screen and (max-width: 1064px) {
+    .section-tokenhero-inside {
+        grid-auto-flow: row;
+        grid-gap: 40px;
+    }
+
+    .section-tokenhero {
+        max-height: unset;
+        height: unset;
+        padding-top: 32px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+
+    .sthdiw-big-boxes,
+    .sthdiw-boxes {
+        grid-auto-flow: row;
+        grid-template-columns: unset;
+    }
 }

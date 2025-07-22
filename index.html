@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/team.css" />
     <link rel="stylesheet" href="./assets/css/remainder.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/roadmap.css" />
     <title>Spread.ai</title>
   </head>
 
@@ -183,12 +184,14 @@
 
     <div class="section-hero">
       <div class="container section-hero-inside">
-        <h1 class="--h1" style="text-align: center">
-          Where Sports Bettors
-          <span style="color: var(--green); display: block"
-            >Win Big, Win Often</span
-          >
-        </h1>
+        <div class="h1-wrapper">
+          <h1 class="--h1 text-center">
+            Where Sports Bettors
+            <span id="title-anim-word" class="title-anim-word --green"
+              >Win big, Win Often</span
+            >
+          </h1>
+        </div>
         <div class="hero-buttons-container">
           <a href="#" class="btn btn-primary">
             <button>
@@ -708,6 +711,82 @@
               src="./assets/img/step_3_component.svg"
               alt="Step 1 Component"
             />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-roadmap">
+      <div class="section-roadmap-inside container-big">
+        <div class="section-heading">
+          <h2 class="--h2-2 text-center">Roadmap</h2>
+          <p class="--big-text --text-color text-center">
+            We're continually working on innovations to enhance the trading
+            experience and empower users with a competitive edge. Instead of a
+            traditional roadmap with deadlines, we present our plans through a
+            'now/next/later' approach.
+          </p>
+        </div>
+        <div class="section-roadmap-main">
+          <div class="roadmap-item">
+            <div class="roadmap-item-title-holder">
+              <img src="./assets/img/now.svg" alt="Now" />
+              <h3 class="--h3">Now</h3>
+            </div>
+            <div class="roadmap-main-steps-holder">
+              <div class="rmsh-item">
+                <p class="--h3-2">Web DAPP Beta</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Multichain</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Trade Overview</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Solana Reborn</p>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-item-title-holder">
+              <img src="./assets/img/next.svg" alt="Next" />
+              <h3 class="--h3">Now</h3>
+            </div>
+            <div class="roadmap-main-steps-holder">
+              <div class="rmsh-item">
+                <p class="--h3-2">Web DAPP Beta</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Multichain</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Trade Overview</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Solana Reborn</p>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-item">
+            <div class="roadmap-item-title-holder">
+              <img src="./assets/img/later.svg" alt="Later" />
+              <h3 class="--h3">Now</h3>
+            </div>
+            <div class="roadmap-main-steps-holder">
+              <div class="rmsh-item">
+                <p class="--h3-2">Web DAPP Beta</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Multichain</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Trade Overview</p>
+              </div>
+              <div class="rmsh-item">
+                <p class="--h3-2">Solana Reborn</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1582,5 +1661,7 @@
     </footer>
 
     <script src="./assets/js/perks.js"></script>
+
+    <script src="./assets/js/title-animation.js"></script>
   </body>
 </html>

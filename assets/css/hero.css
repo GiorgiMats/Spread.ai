@@ -6,6 +6,7 @@
     display: grid;
     justify-content: center;
     grid-gap: 32px;
+    justify-items: center;
 }
 
 .hero-buttons-container {
@@ -18,6 +19,7 @@
 
 .hero-banner-container {
     width: 100%;
+    max-width: 866px;
 }
 
 .hero-banner-container img {
@@ -82,7 +84,7 @@
 
 .section-heading-video {
     margin-top: 52px;
-    margin-bottom: 128px;
+    margin-bottom: 80px;
 }
 
 .section-heading-video-inside .--big-text {
@@ -99,6 +101,111 @@
 /* HOT IT WORKS END */
 
 /* ABOUT US */
+.title-anim-heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    line-height: 1.15;
+    color: #fff;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+/* ------------ animation keyframes ------------ */
+@keyframes title-anim-out {
+
+    /* current phrase exits ↓ */
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(35%);
+    }
+}
+
+@keyframes title-anim-in {
+
+    /* next phrase enters ↓ */
+    0% {
+        opacity: 0;
+        transform: translateY(-35%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ------------ helper classes ------------ */
+.title-anim-word {
+    display: inline-block;
+    margin-left: 0.25em;
+}
+
+.title-anim-out {
+    animation: title-anim-out 0.35s ease forwards;
+}
+
+.title-anim-in {
+    animation: title-anim-in 0.35s ease forwards;
+}
+
+.title-anim-heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    line-height: 1.15;
+    color: #fff;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+/* ------------ animation keyframes ------------ */
+@keyframes title-anim-out {
+
+    /* current phrase exits ↓ */
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(35%);
+    }
+}
+
+@keyframes title-anim-in {
+
+    /* next phrase enters ↓ */
+    0% {
+        opacity: 0;
+        transform: translateY(-35%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ------------ helper classes ------------ */
+.title-anim-word {
+    display: inline-block;
+    margin-left: 0.25em;
+}
+
+.title-anim-out {
+    animation: title-anim-out 0.35s ease forwards;
+}
+
+.title-anim-in {
+    animation: title-anim-in 0.35s ease forwards;
+}
 
 .section-about-us-hero {
     padding-top: 80px;
@@ -108,6 +215,61 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+/* TITLE ANIMATION */
+
+.title-anim-heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    line-height: 1.15;
+    color: #fff;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+/* ------------ animation keyframes ------------ */
+@keyframes title-anim-out {
+
+    /* current phrase exits ↓ */
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(35%);
+    }
+}
+
+@keyframes title-anim-in {
+
+    /* next phrase enters ↓ */
+    0% {
+        opacity: 0;
+        transform: translateY(-35%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ------------ helper classes ------------ */
+.title-anim-word {
+    display: block;
+    margin-left: 0.25em;
+}
+
+.title-anim-out {
+    animation: title-anim-out 0.35s ease forwards;
+}
+
+.title-anim-in {
+    animation: title-anim-in 0.35s ease forwards;
 }
 
 /* ABOUT US END */
