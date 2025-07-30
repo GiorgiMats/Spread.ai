@@ -37,6 +37,10 @@
     justify-content: start;
 }
 
+.hta-step img {
+    margin-bottom: 8px;
+}
+
 .hta-items-divider {
     height: 100%;
     width: 1px;

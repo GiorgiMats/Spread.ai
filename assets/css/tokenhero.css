@@ -3,11 +3,11 @@
     max-height: 900px;
     display: grid;
     align-content: center;
-    /* background-image: url('../img/how-to-access-bg.png');
+    background-image: url('../img/how-to-access-bg.png');
     background-position: center;
     background-size: initial;
     overflow: hidden;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
 }
 
 .section-tokenhero-inside {
@@ -56,6 +56,12 @@
 
 .stil-item .--big-text {
     color: var(--neutral-300);
+}
+
+.sti-rightside img {
+    width: 100%;
+    height: auto;
+    max-width: 80px;
 }
 
 @media only screen and (max-width: 1064px) {

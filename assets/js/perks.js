@@ -2,7 +2,7 @@
               const widget = document.getElementById("accordion-widget");
               const SECTIONS = Array.from(widget.querySelectorAll(".section"));
               const IMG_EL = widget.querySelector("#display-image");
-              const DURATION = 5000; // cycle duration
+              const DURATION = 8000; // cycle duration
               const FADE = 500; // fade duration
               let timeoutId;
 

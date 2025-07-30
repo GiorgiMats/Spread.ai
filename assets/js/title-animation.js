@@ -31,5 +31,5 @@
           }
 
           /* run every 4 s – tweak as desired */
-          setInterval(cycle, 4000);
+          setInterval(cycle, 1500);
         })();

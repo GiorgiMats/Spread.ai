@@ -1,7 +1,7 @@
 .section-phone {
     display: grid;
-    height: calc(100vh - 180px);
-    max-height: 900px;
+    /* height: calc(100vh - 180px); */
+    /* max-height: 900px; */
     align-content: center;
     margin-top: 128px;
     margin-bottom: 128px;
@@ -10,7 +10,7 @@
 .section-phone-inside {
     border-radius: 16px;
     background: linear-gradient(113deg, #D8FE53 0.62%, #80B000 99.19%);
-    padding: 80px 24px 0 24px;
+    padding: 52px 24px 0 24px;
     position: relative;
     width: 100%;
     display: grid;
@@ -40,10 +40,11 @@
     height: 100%;
     display: grid;
     align-items: end;
+    justify-items: center;
 }
 
 .section-phone .image-container img {
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -58,6 +59,18 @@
 .section-phone div,
 .section-phone h2 {
     z-index: 2;
+}
+
+.buttons-container a {
+    position: relative;
+}
+
+.buttons-container a .coming-soon-p {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 670px) {
