@@ -14,6 +14,7 @@
     display: grid;
     max-width: 336px;
     grid-gap: 52px;
+    align-content: start;
 }
 
 .faq-main-content {
@@ -87,6 +88,9 @@
     display: grid;
     grid-gap: 24px;
     justify-content: start;
+    position: sticky;
+    top: 24px;
+    align-content: start;
 }
 
 .faq-nav .fn-li {
