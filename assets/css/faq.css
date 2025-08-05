@@ -95,6 +95,7 @@
 
 .faq-nav .fn-li {
     color: var(--neutral-600);
+    cursor: pointer;
 }
 
 .faq-nav .fn-li-active {

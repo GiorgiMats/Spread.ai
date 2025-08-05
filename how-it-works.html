@@ -411,13 +411,25 @@
             />
           </div>
           <nav class="faq-nav">
-            <li class="fn-li fn-li-active --h3">
+            <li
+              class="fn-li fn-li-active --h3"
+              id="fn-li-0"
+              onclick="changeFaqCategory(0)"
+            >
               Getting Started & Basic Information
             </li>
-            <li class="fn-li --h3">Revenue Generation & Staking</li>
-            <li class="fn-li --h3">Token Burns & Deflationary Mechanics</li>
-            <li class="fn-li --h3">Premium Features & AI Access</li>
-            <li class="fn-li --h3">Technology & Transparency</li>
+            <li class="fn-li --h3" id="fn-li-1" onclick="changeFaqCategory(1)">
+              Revenue Generation & Staking
+            </li>
+            <li class="fn-li --h3" id="fn-li-2" onclick="changeFaqCategory(2)">
+              Token Burns & Deflationary Mechanics
+            </li>
+            <li class="fn-li --h3" id="fn-li-3" onclick="changeFaqCategory(3)">
+              Premium Features & AI Access
+            </li>
+            <li class="fn-li --h3" id="fn-li-4" onclick="changeFaqCategory(4)">
+              Technology & Transparency
+            </li>
           </nav>
         </div>
 
@@ -425,7 +437,7 @@
           <div class="faq-main-inside">
             <h2 class="--h2-2">Frequently Asked Questions</h2>
             <div class="faqs-container">
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">What is Lock AI?</button>
                 <div class="panel">
                   <p class="--big-text --text-color">
@@ -446,7 +458,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">Is this just gambling?</button>
                 <div class="panel">
                   <p class="--big-text --text-color">
@@ -459,7 +471,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">
                   What makes Lock AI different from other betting platforms?
                 </button>
@@ -474,7 +486,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">
                   When did Lock AI launch and what's the token distribution?
                 </button>
@@ -488,7 +500,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">
                   Do I need betting experience to use Lock AI?
                 </button>
@@ -509,7 +521,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">
                   Is there a minimum investment?
                 </button>
@@ -526,7 +538,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">
                   How can I track the AI's performance?
                 </button>
@@ -540,7 +552,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion faq-tree-0">
                 <button class="accordion --h3-2">
                   What's the total supply of $LOCK?
                 </button>
@@ -553,7 +565,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   How does the Weekly Infinity Pool work?
                 </button>
@@ -568,7 +580,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   What returns can I expect from staking?
                 </button>
@@ -583,7 +595,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   How often are staking rewards distributed?
                 </button>
@@ -596,7 +608,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">Can I unstake anytime?</button>
                 <div class="panel">
                   <p class="--big-text --text-color">
@@ -607,7 +619,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   How is this sustainable long-term?
                 </button>
@@ -621,7 +633,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   What happens to the 50% that stays in the pool?
                 </button>
@@ -637,7 +649,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   How is my share of profits calculated?
                 </button>
@@ -659,7 +671,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   What's the APY for staking?
                 </button>
@@ -673,7 +685,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-1">
                 <button class="accordion --h3-2">
                   Can I stake and use premium features simultaneously?
                 </button>
@@ -686,7 +698,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   What is the Daily Bet Burn?
                 </button>
@@ -703,7 +715,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   How do burn mechanisms increase my token value?
                 </button>
@@ -717,7 +729,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   What other burns exist besides daily parlays?
                 </button>
@@ -739,7 +751,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   Are burns immediate or distributed?
                 </button>
@@ -752,7 +764,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   How much supply could be burned annually?
                 </button>
@@ -766,7 +778,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   Who decides when to burn vs let parlays ride?
                 </button>
@@ -792,7 +804,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   How often do ladder access burns happen?
                 </button>
@@ -806,7 +818,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   Do burns happen even in bear markets?
                 </button>
@@ -820,7 +832,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-2">
                 <button class="accordion --h3-2">
                   What's the long-term supply target?
                 </button>
@@ -834,7 +846,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   What is the Million Dollar Ladder?
                 </button>
@@ -852,7 +864,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   How does the 50K Stairway differ from the Million Dollar
                   Ladder?
@@ -868,7 +880,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   How often do ladder access burns happen?
                 </button>
@@ -882,7 +894,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   What is Lock of the Day?
                 </button>
@@ -896,7 +908,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   Can I see the AI's picks without burning tokens?
                 </button>
@@ -910,7 +922,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   What's the success rate for ladder attempts?
                 </button>
@@ -924,7 +936,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   Can I cash out during a ladder attempt?
                 </button>
@@ -937,7 +949,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   How many ladder attempts do I get with one burn?
                 </button>
@@ -950,7 +962,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   Are ladder picks different from pool picks?
                 </button>
@@ -963,7 +975,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   Can I follow other users' ladder attempts?
                 </button>
@@ -976,7 +988,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-3">
                 <button class="accordion --h3-2">
                   What sports do ladder picks cover?
                 </button>
@@ -990,7 +1002,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   How does the AI actually work?
                 </button>
@@ -1004,7 +1016,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   Can I verify the AI's track record?
                 </button>
@@ -1017,7 +1029,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   What happens if the AI has a losing streak?
                 </button>
@@ -1032,7 +1044,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   Is the AI technology proprietary?
                 </button>
@@ -1046,7 +1058,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   How often is the AI updated?
                 </button>
@@ -1060,7 +1072,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   What data sources does the AI analyze?
                 </button>
@@ -1074,7 +1086,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   Can the AI's edge disappear as markets get more efficient?
                 </button>
@@ -1088,7 +1100,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   How do you prevent the AI picks from being leaked?
                 </button>
@@ -1102,7 +1114,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   What's your uptime guarantee?
                 </button>
@@ -1116,7 +1128,7 @@
                   </p>
                 </div>
               </div>
-              <div class="faq-accordion">
+              <div class="faq-accordion hidden faq-tree-4">
                 <button class="accordion --h3-2">
                   Can I see the AI's confidence level for each pick?
                 </button>

@@ -424,6 +424,10 @@ body {
     color: var(--black);
 }
 
+.hidden {
+    display: none !important;
+}
+
 
 @media only screen and (max-width: 692px) {
     .--h1 {
